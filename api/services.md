@@ -54,7 +54,7 @@ Once registered the service can be retrieved and used via [app.service()](./appl
 const myService = app.service('my-service');
 
 myService.find().then(items => console.log('.find()', items));
-myService.get(1).then(item => console.log('.get(1)', items));
+myService.get(1).then(item => console.log('.get(1)', item));
 ```
 
 Keep in mind that services don't have to use databases.  You could easily replace the database in the example with a package that uses some API, like pulling in GitHub stars or stock ticker data.
